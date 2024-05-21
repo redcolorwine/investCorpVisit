@@ -1,0 +1,313 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Century Gothic';
+
+}
+
+html, body, #root, .App {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+.AppWrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/*MAIN*/
+.mainBlock {
+  height: 100vh;
+  width: 100%;
+  background-image: url('./media/black1.jpg');
+  filter: brightness(1) contrast(1.1);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.mainBlock .mainText {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mainBlock .mainText h1 {
+  color: white;
+  font-size: 40pt;
+}
+
+.mainBlock .mainText p {
+  font-size: 14pt;
+  /* margin-left: 150px; */
+  width: 400px;
+  color: ghostwhite;
+  font-family: consolas;
+}
+
+/*ABOUT*/
+
+.aboutBlock {
+  height: auto;
+  width: 100%;
+  background-color: black;
+  color: white;
+  margin-bottom: 100px;
+}
+
+.aboutBlock>h1 {
+  color: whitesmoke;
+  font-size: 20pt;
+  padding-top: 40px;
+  /* padding-left: 350px; */
+}
+
+.aboutBlock>h1>svg {
+  width: 40px;
+}
+
+.aboutWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutWrapper>img {
+  height: 450px;
+  width: 450px;
+}
+
+.aboutText {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-size: 16pt;
+}
+
+.aboutText p {
+  color: gray;
+}
+
+.aboutText p>span {
+  color: whitesmoke;
+}
+
+/*TEAM*/
+
+.team {
+  margin: 80px auto 0px auto;
+  height: auto;
+  width: 100%;
+  background-color: black;
+  color: white;
+  margin-bottom: 100px;
+}
+
+.team>h1 {
+  color: whitesmoke;
+  font-size: 20pt;
+  padding-top: 40px;
+  /* padding-left: 350px; */
+}
+
+.team .memCard>img {
+  height: 500px;
+  width: 350px;
+  border-radius: 30px;
+  object-fit: cover;
+  filter: brightness(0.6) contrast(0.8);
+}
+
+
+
+.teamWrapper {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team .memCard {
+  display: flex;
+  width: 800px;
+
+}
+
+.team .memCard .memText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: -60px;
+  width: 300px;
+  z-index: 1;
+}
+
+.team .memCard .memText h4 {
+  font-size: 20pt;
+}
+
+.team .memCard .memText p>span {
+  color: rgb(255, 255, 255);
+  font-size: 15pt;
+  font-weight: 900;
+}
+
+.team .memCard .memText .descrMem {
+  color: rgb(218, 205, 205);
+}
+
+/*SERVICES*/
+.services {
+  color: white;
+  margin-bottom: 100px;
+}
+
+.services>h1 {
+  color: whitesmoke;
+  font-size: 20pt;
+  padding-top: 40px;
+  /* padding-left: 350px; */
+}
+
+.servicesWrapper {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.servicesWrapper img {
+  height: 500px;
+  width: 500px;
+}
+
+.servicesText {
+  display: flex;
+  width: 600px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.servicesText .serviceType {
+  width: 250px;
+  margin: 10px 0px 10px 0px;
+}
+
+.serviceType {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.serviceType p {
+  font-size: 15pt;
+  color: rgb(204, 202, 202);
+}
+
+.serviceType span {
+  color: gray;
+  font-size: 24pt;
+}
+
+/*searchingBest*/
+.searchingBest {
+  margin-bottom: 100px;
+  color: white;
+}
+
+.searchingWrapper {
+  margin-top: 60px;
+}
+
+.searchingWrapper img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.searchText {
+  display: flex;
+  width: 500px;
+  margin: 60px auto 0px auto;
+}
+
+.searchText>button {
+  width: 300px;
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.searchText>button:active {
+  transform: translate(10px, 10px);
+}
+
+/*ACCORDEON*/
+
+.accordeon {
+  color: white;
+  margin: 0 auto;
+
+}
+
+.accordeon h1 {
+  color: whitesmoke;
+  font-size: 20pt;
+
+}
+
+.accorderonWrapper {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+
+.accordeonItem {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.accordeonItem p {
+  color: gray;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 1.5s;
+}
+
+.accordeonItem svg:hover {
+  cursor: pointer;
+}
+
+.accordeonItem hr {
+  width: 1200px;
+  margin: 10px auto 10px auto;
+}
+
+.accHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+
+p.accActive {
+
+  height: auto;
+  opacity: 1;
+  transition: 1.5s;
+}

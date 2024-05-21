@@ -1,0 +1,36 @@
+.accordeonItem {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.accordeonItem p {
+    color: gray;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.accordeonItem svg:hover {
+    cursor: pointer;
+}
+
+.accordeonItem hr {
+    width: 1200px;
+    margin: 10px auto 10px auto;
+}
+
+.accHeader {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+p.accActive {
+
+    height: auto;
+    opacity: 1;
+    /* transition: 1.5s; */
+}
