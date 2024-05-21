@@ -11,6 +11,11 @@
     transition: opacity 1s ease-out;
 }
 
+/* .accordeonItem>svg {
+    height: 25px;
+    width: 25px;
+} */
+
 .accordeonItem svg:hover {
     cursor: pointer;
 }
@@ -40,6 +45,12 @@ p.accActive {
         width: 95%;
         margin: 0;
         padding: 0;
+ 
+    }
+
+    .accordeonItem h2 {
+        width: 90%;
+        font-size: 12pt;
     }
 
     .accordeonItem hr {
@@ -49,7 +60,7 @@ p.accActive {
 
     .accHeader {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         gap: 5px;
         align-items: center;
     }
