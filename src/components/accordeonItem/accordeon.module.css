@@ -34,3 +34,26 @@ p.accActive {
     opacity: 1;
     /* transition: 1.5s; */
 }
+
+@media (max-width: 1200px) {
+    .accordeonItem {
+        width: 95%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .accordeonItem hr {
+        width: 100%;
+        margin: 10px auto 10px auto;
+    }
+
+    .accHeader {
+        display: flex;
+        justify-content: space-between;
+        gap: 5px;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 992px) {}

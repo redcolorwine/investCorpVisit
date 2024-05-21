@@ -18,6 +18,7 @@ html, body, #root, .App {
 
 .Center {
   flex: 1 1 auto;
+
 }
 
 .AppWrapper {
@@ -229,9 +230,11 @@ html, body, #root, .App {
   margin-bottom: 100px;
   color: white;
 }
-.searchingBest h1{
+
+.searchingBest h1 {
   font-size: 20pt;
 }
+
 .searchingWrapper {
   margin-top: 60px;
 }
@@ -322,3 +325,730 @@ p.accActive {
   opacity: 1;
   transition: 1.5s;
 }
+
+/* Large desktops and laptops */
+@media (max-width: 1200px) {
+  .AppWrapper {
+    width: 1000px;
+  }
+
+  /*MAIN*/
+  .mainBlock {
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  .mainBlock .mainText {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .mainBlock .mainText h1 {
+    font-size: 40pt;
+  }
+
+  .mainBlock .mainText p {
+    font-size: 14pt;
+    width: 400px;
+  }
+
+  /*ABOUT*/
+
+  .aboutBlock {
+    height: auto;
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin-bottom: 100px;
+  }
+
+  .aboutBlock>h1 {
+    color: whitesmoke;
+    font-size: 20pt;
+    padding-top: 40px;
+    /* padding-left: 350px; */
+  }
+
+  .aboutBlock>h1>svg {
+    width: 40px;
+  }
+
+  .aboutWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .aboutWrapper>img {
+    height: 450px;
+    width: 450px;
+  }
+
+  .aboutText {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 16pt;
+  }
+
+  .aboutText p {
+    color: gray;
+  }
+
+  .aboutText p>span {
+    color: whitesmoke;
+  }
+
+  /*TEAM*/
+
+  .team {
+    margin: 80px auto 0px auto;
+    height: auto;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  .team>h1 {
+    font-size: 20pt;
+    padding-top: 40px;
+  }
+
+  .team .memCard>img {
+    height: 400px;
+    width: 400px;
+  }
+
+  .teamWrapper {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .team .memCard {
+    display: flex;
+    width: 440px;
+  }
+
+  .team .memCard .memText {
+    margin-left: -180px;
+    width: 300px;
+    font-size: 10pt;
+  }
+
+  .team .memCard .memText h4 {
+    font-size: 16pt;
+  }
+
+  .team .memCard .memText p>span {
+    font-size: 12pt;
+    font-weight: 900;
+  }
+
+
+  /*SERVICES*/
+  .services {
+    margin-bottom: 100px;
+  }
+
+  .services>h1 {
+    font-size: 20pt;
+    padding-top: 40px;
+  }
+
+  .servicesWrapper {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .servicesWrapper img {
+    height: 400px;
+    width: 400px;
+  }
+
+  .servicesText {
+    display: flex;
+    width: 500px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .servicesText .serviceType {
+    width: 200px;
+    margin: 10px 0px 10px 0px;
+  }
+
+  .serviceType {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .serviceType p {
+    font-size: 12pt;
+  }
+
+  .serviceType span {
+    font-size: 20pt;
+  }
+
+  /*searchingBest*/
+  .searchingBest {
+    margin-bottom: 100px;
+  }
+
+  .searchingBest h1 {
+    font-size: 20pt;
+  }
+
+  .searchingWrapper {
+    margin-top: 60px;
+  }
+
+  .searchingWrapper img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+  }
+
+  .searchText {
+    display: flex;
+    width: 500px;
+    margin: 60px auto 0px auto;
+  }
+
+  .searchText>button {
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .searchText>button:active {
+    transform: translate(10px, 10px);
+  }
+
+  /*ACCORDEON*/
+
+  .accordeon {
+    color: white;
+    margin: 0 auto;
+
+  }
+
+  .accordeon h1 {
+    color: whitesmoke;
+    font-size: 20pt;
+
+  }
+
+  .accorderonWrapper {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+}
+
+/* Portrait tablets and medium desktops */
+@media (max-width: 992px) {
+  .AppWrapper {
+    width: 770px;
+  }
+
+  /*MAIN*/
+  .mainBlock {
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  .mainBlock .mainText {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .mainBlock .mainText h1 {
+    font-size: 35pt;
+  }
+
+  .mainBlock .mainText p {
+    font-size: 12pt;
+    width: 400px;
+  }
+
+  /*ABOUT*/
+
+  .aboutBlock {
+    height: auto;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  .aboutBlock>h1 {
+    color: whitesmoke;
+    font-size: 18pt;
+    padding-top: 40px;
+    /* padding-left: 350px; */
+  }
+
+  .aboutBlock>h1>svg {
+    width: 40px;
+  }
+
+  .aboutWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .aboutWrapper>img {
+    height: 360px;
+    width: 360px;
+  }
+
+  .aboutText {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 14pt;
+  }
+
+  /*TEAM*/
+
+  .team {
+    margin: 80px auto 0px auto;
+    height: auto;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  .team>h1 {
+    font-size: 18pt;
+    padding-top: 40px;
+  }
+
+  .team .memCard>img {
+    height: 400px;
+    width: 50%;
+    object-fit: cover;
+  }
+
+  .teamWrapper {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .team .memCard {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .team .memCard .memText {
+    margin-left: 0px;
+    width: 45%;
+    padding: 15px;
+    font-size: 10pt;
+  }
+
+  .team .memCard .descrMem {
+    padding-right: 5px;
+  }
+
+  .team .memCard .memText h4 {
+    font-size: 16pt;
+  }
+
+  .team .memCard .memText p>span {
+    font-size: 12pt;
+    font-weight: 900;
+  }
+
+
+  /*SERVICES*/
+  .services {
+    margin-bottom: 100px;
+  }
+
+  .services>h1 {
+    font-size: 20pt;
+    padding-top: 40px;
+  }
+
+  .servicesWrapper {
+    width: 770px;
+    margin: 0 auto;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .servicesWrapper img {
+    order: 0;
+    height: 400px;
+    width: 100%;
+  }
+
+  .servicesText {
+    order: 1;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .servicesText .serviceType {
+    width: 200px;
+    margin: 10px 0px 10px 0px;
+  }
+
+  .serviceType {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .serviceType p {
+    font-size: 12pt;
+  }
+
+  .serviceType span {
+    font-size: 20pt;
+  }
+
+  /*searchingBest*/
+  .searchingBest {
+    margin-bottom: 100px;
+  }
+
+  .searchingBest h1 {
+    font-size: 20pt;
+  }
+
+  .searchingWrapper {
+    margin-top: 60px;
+  }
+
+  .searchingWrapper img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+  }
+
+  .searchText {
+    display: flex;
+    width: 500px;
+    margin: 60px auto 0px auto;
+  }
+
+  .searchText>button {
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .searchText>button:active {
+    transform: translate(10px, 10px);
+  }
+
+  /*ACCORDEON*/
+
+  .accordeon {
+    color: white;
+    margin: 0 auto;
+
+  }
+
+  .accordeon h1 {
+    color: whitesmoke;
+    font-size: 20pt;
+
+  }
+
+  .accorderonWrapper {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .AppWrapper {
+    width: 100%;
+    text-align: center;
+  }
+
+  /*MAIN*/
+  .mainBlock {
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .mainBlock .mainText {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .mainBlock .mainText h1 {
+    font-size: 25pt;
+  }
+
+  .mainBlock .mainText p {
+    font-size: 10pt;
+    width: 400px;
+  }
+
+  /*ABOUT*/
+
+  .aboutBlock {
+    height: auto;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .aboutBlock>h1 {
+    font-size: 18pt;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    /* padding-left: 350px; */
+  }
+
+  .aboutBlock>h1>svg {
+    width: 40px;
+  }
+
+  .aboutWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .aboutWrapper>img {
+    height: 360px;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .aboutText {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    gap: 20px;
+    font-size: 14pt;
+  }
+
+  /*TEAM*/
+
+  .team {
+    margin: 80px auto 0px auto;
+    height: auto;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .team>h1 {
+    font-size: 18pt;
+    padding-top: 40px;
+  }
+
+  .team .memCard>img {
+    height: 500px;
+    width: 95%;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+
+  .teamWrapper {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .team .memCard {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .team .memCard .memText {
+    margin-left: 0px;
+    width: 95%;
+    padding: 15px;
+    font-size: 10pt;
+    text-align: justify;
+  }
+
+  .team .memCard .descrMem {
+    padding-right: 5px;
+  }
+
+  .team .memCard .memText h4 {
+    font-size: 16pt;
+  }
+
+  .team .memCard .memText p>span {
+    font-size: 12pt;
+    font-weight: 900;
+  }
+
+
+  /*SERVICES*/
+  .services {
+    margin-bottom: 50px;
+  }
+
+  .services>h1 {
+    font-size: 20pt;
+    padding-top: 40px;
+  }
+
+  .servicesWrapper {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .servicesWrapper img {
+    order: 0;
+    height: 400px;
+    width: 100%;
+  }
+
+  .servicesText {
+    order: 1;
+    display: flex;
+    width: 95%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .servicesText .serviceType {
+    width: 200px;
+    margin: 10px 0px 10px 0px;
+  }
+
+  .serviceType {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .serviceType p {
+    font-size: 12pt;
+  }
+
+  .serviceType span {
+    font-size: 20pt;
+  }
+
+  /*searchingBest*/
+  .searchingBest {
+    margin-bottom: 50px;
+  }
+
+  .searchingBest h1 {
+    font-size: 20pt;
+  }
+
+  .searchingWrapper {
+    margin-top: 60px;
+  }
+
+  .searchingWrapper img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+  }
+
+  .searchText {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 60px auto 0px auto;
+  }
+
+  .searchText>button {
+    width: 150px;
+    height: 30px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .searchText>button:active {
+    transform: translate(10px, 10px);
+  }
+
+  /*ACCORDEON*/
+
+  .accordeon {
+    color: white;
+    margin: 0 auto;
+
+  }
+
+  .accordeon h1 {
+    color: whitesmoke;
+    font-size: 20pt;
+
+  }
+
+  .accorderonWrapper {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {}
