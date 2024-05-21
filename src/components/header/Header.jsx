@@ -38,7 +38,7 @@ const Header = (props) => {
                 <div className={cmedia.menuWrapper}>
                     <motion.nav className={cmedia.menu} animate={!burger ? "open" : "closed"}
                         variants={variants}>
-                        <li><h1>myLogo</h1></li>
+                        <li onClick={() => history('/')}><h1>INVESTMENT CORPORATION</h1></li>
                         <li onClick={(event) => onHref(event, 1)}>О нас</li>
                         <li onClick={(event) => onHref(event, 2)}>Команда</li>
                         <li onClick={(event) => onHref(event, 3)}>Вопрос-ответ</li>

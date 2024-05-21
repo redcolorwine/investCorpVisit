@@ -11,6 +11,15 @@ html, body, #root, .App {
   background-color: black;
 }
 
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.Center {
+  flex: 1 1 auto;
+}
+
 .AppWrapper {
   width: 1200px;
   margin: 0 auto;
@@ -72,7 +81,7 @@ html, body, #root, .App {
 .aboutWrapper {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .aboutWrapper>img {
@@ -127,7 +136,7 @@ html, body, #root, .App {
 .teamWrapper {
   margin-top: 60px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -220,7 +229,9 @@ html, body, #root, .App {
   margin-bottom: 100px;
   color: white;
 }
-
+.searchingBest h1{
+  font-size: 20pt;
+}
 .searchingWrapper {
   margin-top: 60px;
 }

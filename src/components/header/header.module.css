@@ -21,13 +21,26 @@
     color: white;
     font-family: 'Century Gothic';
 }
-.header .logo h1{
+
+.menuWrapper nav li {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.menuWrapper nav li:hover {
+    cursor: pointer;
+    color: goldenrod;
+}
+
+.header .logo h1 {
     font-size: 12pt;
 }
-.header .logo img{
-height: 90px;
-width: 200px;
+
+.header .logo img {
+    height: 90px;
+    width: 200px;
 }
+
 .wrapper svg {
     padding-top: 20px;
     padding-left: 20px;
@@ -48,7 +61,9 @@ width: 200px;
 
 }
 
-.but {}
+.but {
+    cursor: pointer;
+}
 
 .burger_active {
     /* margin-left: 10px; */
@@ -68,14 +83,14 @@ width: 200px;
 
 }
 
-.burger_active .menuWrapper, .burger .menuWrapper{
+.burger_active .menuWrapper, .burger .menuWrapper {
     display: flex;
     justify-content: space-between;
     padding: 5px;
 
 }
 
-.burger_active .menuWrapper .menu, .burger .menuWrapper .menu{
+.burger_active .menuWrapper .menu, .burger .menuWrapper .menu {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -92,11 +107,11 @@ width: 200px;
     gap: 10px;
     text-align: center;
     margin-bottom: 40px;
-  
+
 }
 
 .consult>p>a {
     color: white;
     text-decoration: none;
- 
+
 }

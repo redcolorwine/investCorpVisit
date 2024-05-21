@@ -28,3 +28,14 @@
 .company ul li {
     list-style: none;
 }
+
+.footer .privacy {
+    width: 400px;
+    font-size: 10pt;
+    text-align: justify;
+    color: gainsboro;
+}
+
+.footer .privacy p>a {
+    color: goldenrod;
+}
