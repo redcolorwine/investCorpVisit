@@ -25,7 +25,7 @@ const Main = (props) => {
     }
     const textAnimation2 = {
         hidden: {
-            x: 300,
+            x: 10,
             opacity: 0,
         },
         visible: custom => ({
@@ -36,7 +36,7 @@ const Main = (props) => {
     }
     const textAnimation3 = {
         hidden: {
-            x: -300,
+            x: 10,
             opacity: 0,
         },
         visible: custom => ({
