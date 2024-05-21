@@ -1051,4 +1051,71 @@ p.accActive {
 }
 
 /* Landscape phones and smaller */
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+  .mainBlock {
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .mainBlock .mainText {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+
+  }
+
+  .mainBlock .mainText h1 {
+    font-size: 25pt;
+    margin-left: 10px;
+  }
+
+  .mainBlock .mainText p {
+    font-size: 10pt;
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  .aboutBlock {
+    height: auto;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .aboutBlock>h1 {
+    font-size: 18pt;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    /* padding-left: 350px; */
+  }
+
+  .aboutBlock>h1>svg {
+    width: 40px;
+  }
+
+  .aboutWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+
+  .aboutWrapper>img {
+    height: 360px;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .aboutText {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+
+    gap: 20px;
+    font-size: 11pt;
+  }
+}
