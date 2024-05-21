@@ -21,8 +21,10 @@ const Header = (props) => {
     const history = useNavigate();
     const onHref = async (e, num) => {
         e.preventDefault();
+        setBurger(!burger);
         await history('/');
         props.menuRefs[num].current.scrollIntoView({ behavior: "smooth" });
+
     };
 
     return (
