@@ -23,8 +23,8 @@ const Footer = () => {
                 </div>
                 <div className={cmedia.contacts}>
                     <h3>Контакты</h3>
-                    <p>Email: <span>investmentCorp@gmail.com</span></p>
-                    <p>Телефон: <span>+7 (994) 332-01-02</span></p>
+                    <p>Email: <span>investment.corporation@invest-corp.ru</span></p>
+                    <p>Телефон: <span>+7 (963) 995-13-66</span></p>
                 </div>
                 <div className={cmedia.socials}>
                     <h3>Социальные сети</h3>

@@ -1,7 +1,7 @@
 import React from 'react'
 import './../../App.css';
 import gif02 from './../../media/gifs/gif5.gif';
-import gif03 from './../../media/gifs/gif1.gif';
+import gif03 from './../../media/gifs/gif4.gif';
 import { FiMinus } from "react-icons/fi";
 import { motion } from "framer-motion";
 import { FiPlus } from "react-icons/fi";

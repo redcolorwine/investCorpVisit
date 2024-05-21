@@ -54,7 +54,7 @@ const Header = (props) => {
                 <div className={cmedia.consult}>
                     <p><a href="#">ОСТАВИТЬ ЗАЯВКУ</a></p>
                     <p><a href="#">ПОЛУЧИТЬ ПРЕЗЕНТАЦИЮ</a></p>
-                    <p><span>+7 (123) 338-34-12</span></p>
+                    <p><span>+7 (963) 995-13-66</span></p>
                 </div>
 
             </div>
