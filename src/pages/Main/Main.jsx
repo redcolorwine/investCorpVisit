@@ -4,12 +4,18 @@ import gif02 from './../../media/gifs/gif5tr.gif';
 import gif03 from './../../media/gifs/gftr2.gif';
 import { FiMinus } from "react-icons/fi";
 import { motion } from "framer-motion";
+import { CiMail } from "react-icons/ci";
+import { CiPhone } from "react-icons/ci";
 import { FiPlus } from "react-icons/fi";
+import { PiWhatsappLogoThin } from "react-icons/pi";
+import { IoLogoInstagram } from "react-icons/io";
+import { PiTelegramLogoThin } from "react-icons/pi";
 import imgP1 from './../../media/images/3d-rendering-online-avatar-design.jpg';
 import imgP2 from './../../media/images/7828579.jpg';
 import imgH from './../../media/images/house.jpg';
 import { useRef, useState } from 'react';
 import AccordeonItem from '../../components/accordeonItem/AccordeonItem';
+import ContactForm from '../../components/contactForm/ContactForm';
 
 const Main = (props) => {
     const textAnimation = {
@@ -122,7 +128,8 @@ const Main = (props) => {
                         <img src={gif03} alt="" />
                     </div>
                 </motion.div>
-                <div className="searchingBest">
+
+                <div className="searchingBest" ref={props.searchRef}>
                     <h1>[04] <FiMinus size={25} /> ПОДБОР ЛУЧШЕЙ НЕДВИЖИМОСТИ</h1>
                     <div className="searchingWrapper">
                         <img src={imgH} alt="" />
@@ -132,6 +139,7 @@ const Main = (props) => {
                         </div>
                     </div>
                 </div>
+
                 <div className="accordeon" ref={props.accordeonRef}>
                     <h1>[05] <FiMinus size={25} /> ВОПРОС-ОТВЕТ</h1>
                     <div className="accorderonWrapper">
@@ -139,6 +147,46 @@ const Main = (props) => {
                         <AccordeonItem headText={'Сколько стоят услуги агентства?'} descrText={'Мы получаем комиссию напрямую от застройщиков, поэтому для наших клиентов это абсолютно бесплатно.'} />
                         <AccordeonItem headText={'Отличается ли стоимость объектов недвижимости от официального сайта проекта?'} descrText={'Нет, мы работаем по прайсу от застройщика, но нам известно о закрытых продажах, уникальных предложениях и специальных условиях, поэтому мы обязательно найдем для вас наиболее выгодные лоты.'} />
                         <AccordeonItem headText={'В чем заключается наша работа?'} descrText={'Мы станем вашим личным советником на пути к приобретению недвижимости: от выявления запроса до подписания документов о покупке.'} />
+                    </div>
+                </div>
+
+                <div className="contacts" ref={props.contactsRef}>
+                    <h1>[06] <FiMinus size={25} /> КОНТАКТЫ</h1>
+                    <div className="contactsWrapper">
+                        <div className="leftSide">
+                            <div className="top">
+                                <div className="head">
+                                    <h2>Мы всегда на связи!</h2>
+                                    <p>Мы готовы ответить на все интересующие Вас вопросы</p>
+                                </div>
+                                <div className="mail">
+                                    <CiMail size={65} />
+                                    <p>Email: <span>investment.corporation@invest-corp.ru</span></p>
+                                </div>
+                                <div className="phone">
+
+                                    <CiPhone size={65} />
+                                    <p>Телефон: <span>+7 (963) 995-13-66</span></p>
+                                </div>
+                            </div>
+                            <div className="bottom">
+                                <div className='socials'>
+                                    <h2>Социальные сети</h2>
+                                    <div className="socIcons">
+                                        <a href='https://web.whatsapp.com/' target='blank'><PiWhatsappLogoThin size={35} /></a>
+                                        <a href='https://www.instagram.com/' target='blank'><IoLogoInstagram size={35} /></a>
+                                        <a href='https://web.telegram.org/' target='blank'><PiTelegramLogoThin size={35} /></a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div className="rightSide">
+                            <ContactForm />
+                        </div>
+
                     </div>
                 </div>
             </div>

@@ -43,9 +43,10 @@ const Header = (props) => {
                         <li onClick={() => { setBurger(!burger); history('/') }}><h1>INVESTMENT CORPORATION</h1></li>
                         <li onClick={(event) => onHref(event, 1)}>О нас</li>
                         <li onClick={(event) => onHref(event, 2)}>Команда</li>
-                        <li onClick={(event) => onHref(event, 3)}>Вопрос-ответ</li>
-                        <li>Подборка проектов</li>
-                        <li>Контакты</li>
+                        <li onClick={(event) => onHref(event, 3)}>Услуги</li>
+                        <li onClick={(event) => onHref(event, 4)}>Подбор недвижимости</li>
+                        <li onClick={(event) => onHref(event, 5)}>Вопрос-ответ</li>
+                        <li onClick={(event) => onHref(event, 6)}>Контакты</li>
                     </motion.nav>
                     <div className={cmedia.but}>
                         <FiX size={25} color='white' onClick={() => clickBurger()} />

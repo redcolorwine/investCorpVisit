@@ -55,14 +55,16 @@ function App() {
   const teamRef = useRef();
   const accordeonRef = useRef();
   const servicesRef = useRef();
+  const contactsRef = useRef();
+  const searchRef = useRef();
   const [acc, openAcc] = useState(false);
 
   return (
     <div className="App">
-      <Header menuRefs={[mainRef, aboutRef, teamRef, accordeonRef]} />
+      <Header menuRefs={[mainRef, aboutRef, teamRef, servicesRef, searchRef, accordeonRef, contactsRef]} />
       <div className="Center">
         <Routes>
-          <Route path='/' element={<Main mainRef={mainRef} aboutRef={aboutRef} teamRef={teamRef} accordeonRef={accordeonRef} />} />
+          <Route path='/' element={<Main mainRef={mainRef} aboutRef={aboutRef} teamRef={teamRef} servicesRef={servicesRef} searchRef={searchRef} accordeonRef={accordeonRef} contactsRef={contactsRef} />} />
           <Route path='/privacy' element={<Privacy />} />
         </Routes>
       </div>
