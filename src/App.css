@@ -9,6 +9,7 @@ html, body, #root, .App {
   height: 100%;
   width: 100%;
   background-color: black;
+  /* background-color: rgb(24, 24, 24); */
 }
 
 body, html {
@@ -19,6 +20,7 @@ body, html {
 .App {
   display: flex;
   flex-direction: column;
+
 }
 
 .Center {
@@ -29,6 +31,9 @@ body, html {
 .AppWrapper {
   width: 1200px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }
 
 /*MAIN*/
@@ -40,7 +45,7 @@ body, html {
   background-size: cover;
   background-position: center;
   position: relative;
-  margin-bottom: 100px;
+  
 }
 
 .mainBlock .mainText {
@@ -60,7 +65,7 @@ body, html {
   /* margin-left: 150px; */
   width: 400px;
   color: ghostwhite;
-  font-family: consolas;
+  font-family: 'Century Gothic', SomeFont, sans-serif;
 }
 
 /*ABOUT*/
@@ -69,14 +74,15 @@ body, html {
   height: auto;
   width: 100%;
   background-color: black;
+  /* background-color: rgb(24, 24, 24); */
   color: white;
-  margin-bottom: 100px;
+  margin-top: 100px;
 }
 
 .aboutBlock>h1 {
   color: whitesmoke;
   font-size: 20pt;
-  padding-top: 40px;
+  
   /* padding-left: 350px; */
 }
 
@@ -118,14 +124,15 @@ body, html {
   height: auto;
   width: 100%;
   background-color: black;
+  /* background-color: rgb(24, 24, 24); */
   color: white;
-  margin-bottom: 100px;
+  
 }
 
 .team>h1 {
   color: whitesmoke;
   font-size: 20pt;
-  padding-top: 40px;
+  
   /* padding-left: 350px; */
 }
 
@@ -178,13 +185,13 @@ body, html {
 /*SERVICES*/
 .services {
   color: white;
-  margin-bottom: 100px;
+  
 }
 
 .services>h1 {
   color: whitesmoke;
   font-size: 20pt;
-  padding-top: 40px;
+  
   /* padding-left: 350px; */
 }
 
@@ -200,6 +207,7 @@ body, html {
 .servicesWrapper img {
   height: 500px;
   width: 500px;
+  object-fit:contain;
 }
 
 .servicesText {
@@ -232,7 +240,7 @@ body, html {
 
 /*searchingBest*/
 .searchingBest {
-  margin-bottom: 100px;
+  
   color: white;
 }
 
@@ -255,6 +263,7 @@ body, html {
   display: flex;
   width: 500px;
   margin: 60px auto 0px auto;
+  color: gray;
 }
 
 .searchText>button {
@@ -341,7 +350,7 @@ p.accActive {
   .mainBlock {
     height: 100vh;
     width: 100%;
-    margin-bottom: 100px;
+    
   }
 
   .mainBlock .mainText {
@@ -366,14 +375,15 @@ p.accActive {
     height: auto;
     width: 100%;
     background-color: black;
+    /* background-color: rgb(24, 24, 24); */
     color: white;
-    margin-bottom: 100px;
+    
   }
 
   .aboutBlock>h1 {
     color: whitesmoke;
     font-size: 20pt;
-    padding-top: 40px;
+    
     /* padding-left: 350px; */
   }
 
@@ -404,22 +414,18 @@ p.accActive {
     color: gray;
   }
 
-  .aboutText p>span {
-    color: whitesmoke;
-  }
-
   /*TEAM*/
 
   .team {
     margin: 80px auto 0px auto;
     height: auto;
     width: 100%;
-    margin-bottom: 100px;
+    
   }
 
   .team>h1 {
     font-size: 20pt;
-    padding-top: 40px;
+    
   }
 
   .team .memCard>img {
@@ -458,12 +464,12 @@ p.accActive {
 
   /*SERVICES*/
   .services {
-    margin-bottom: 100px;
+    
   }
 
   .services>h1 {
     font-size: 20pt;
-    padding-top: 40px;
+    
   }
 
   .servicesWrapper {
@@ -508,7 +514,7 @@ p.accActive {
 
   /*searchingBest*/
   .searchingBest {
-    margin-bottom: 100px;
+    
   }
 
   .searchingBest h1 {
@@ -578,7 +584,7 @@ p.accActive {
   .mainBlock {
     height: 100vh;
     width: 100%;
-    margin-bottom: 100px;
+    
   }
 
   .mainBlock .mainText {
@@ -602,13 +608,13 @@ p.accActive {
   .aboutBlock {
     height: auto;
     width: 100%;
-    margin-bottom: 100px;
+    
   }
 
   .aboutBlock>h1 {
     color: whitesmoke;
     font-size: 18pt;
-    padding-top: 40px;
+    
     /* padding-left: 350px; */
   }
 
@@ -641,12 +647,12 @@ p.accActive {
     margin: 80px auto 0px auto;
     height: auto;
     width: 100%;
-    margin-bottom: 100px;
+    
   }
 
   .team>h1 {
     font-size: 18pt;
-    padding-top: 40px;
+    
   }
 
   .team .memCard>img {
@@ -693,12 +699,12 @@ p.accActive {
 
   /*SERVICES*/
   .services {
-    margin-bottom: 100px;
+    
   }
 
   .services>h1 {
     font-size: 20pt;
-    padding-top: 40px;
+    
   }
 
   .servicesWrapper {
@@ -746,7 +752,7 @@ p.accActive {
 
   /*searchingBest*/
   .searchingBest {
-    margin-bottom: 100px;
+    
   }
 
   .searchingBest h1 {
@@ -810,16 +816,22 @@ p.accActive {
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+  html, body, #root, .App {
+    background-color: rgb(24, 24, 24);
+  }
+
   .AppWrapper {
     width: 100%;
     text-align: center;
+    gap: 20px;
   }
 
   /*MAIN*/
   .mainBlock {
     height: 100vh;
     width: 100%;
-    margin-bottom: 50px;
+    
+    background-color: rgb(24, 24, 24);
   }
 
   .mainBlock .mainText {
@@ -843,12 +855,13 @@ p.accActive {
   .aboutBlock {
     height: auto;
     width: 100%;
-    margin-bottom: 50px;
+    
+    background-color: rgb(24, 24, 24);
   }
 
   .aboutBlock>h1 {
     font-size: 18pt;
-    padding-top: 40px;
+    
     padding-bottom: 20px;
     /* padding-left: 350px; */
   }
@@ -885,12 +898,13 @@ p.accActive {
     margin: 80px auto 0px auto;
     height: auto;
     width: 100%;
-    margin-bottom: 50px;
+    
+    background-color: rgb(24, 24, 24);
   }
 
   .team>h1 {
     font-size: 18pt;
-    padding-top: 40px;
+    
   }
 
   .team .memCard>img {
@@ -940,12 +954,13 @@ p.accActive {
 
   /*SERVICES*/
   .services {
-    margin-bottom: 50px;
+    
+    background-color: rgb(24, 24, 24);
   }
 
   .services>h1 {
     font-size: 20pt;
-    padding-top: 40px;
+    
   }
 
   .servicesWrapper {
@@ -993,7 +1008,8 @@ p.accActive {
 
   /*searchingBest*/
   .searchingBest {
-    margin-bottom: 50px;
+    
+    background-color: rgb(24, 24, 24);
   }
 
   .searchingBest h1 {
@@ -1038,6 +1054,7 @@ p.accActive {
   .accordeon {
     color: white;
     margin: 0 auto;
+    background-color: rgb(24, 24, 24);
 
   }
 
@@ -1060,7 +1077,7 @@ p.accActive {
   .mainBlock {
     height: 100vh;
     width: 100%;
-    margin-bottom: 50px;
+    
   }
 
   .mainBlock .mainText {
@@ -1086,12 +1103,12 @@ p.accActive {
   .aboutBlock {
     height: auto;
     width: 100%;
-    margin-bottom: 50px;
+    
   }
 
   .aboutBlock>h1 {
     font-size: 18pt;
-    padding-top: 40px;
+    
     padding-bottom: 20px;
     /* padding-left: 350px; */
   }

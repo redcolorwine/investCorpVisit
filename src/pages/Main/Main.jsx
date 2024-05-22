@@ -1,7 +1,7 @@
 import React from 'react'
 import './../../App.css';
-import gif02 from './../../media/gifs/gif5.gif';
-import gif03 from './../../media/gifs/gif4.gif';
+import gif02 from './../../media/gifs/gif5tr.gif';
+import gif03 from './../../media/gifs/gftr2.gif';
 import { FiMinus } from "react-icons/fi";
 import { motion } from "framer-motion";
 import { FiPlus } from "react-icons/fi";
@@ -57,7 +57,6 @@ const Main = (props) => {
             </div>
             <div className="AppWrapper">
 
-
                 <div className="aboutBlock" ref={props.aboutRef}>
                     <h1>[01] <FiMinus size={25} /> О НАС</h1>
                     <motion.div initial={'hidden'}
@@ -66,7 +65,7 @@ const Main = (props) => {
                             <p>Современное агентство недвижимости, построенное на традиционных ценностях обслуживания,
                                 честности и экспертности.</p>
                             <motion.p custom={2} variants={textAnimation}><span>МЫ ЗНАЕМ РЫНОК И СВОБОДНО ГОВОРИМ О ЕГО ДОСТОИНСТВАХ И НЕДОСТАТКАХ.</span></motion.p>
-                            <motion.p custom={3} variants={textAnimation}><span>От знакомства с перспективными инвестиционными проектами до приобретения семейной резиденции для комфортного проживания – INVESTMENT CORPORATION ваш проводник к идеальному выбору недвижимости</span></motion.p>
+                            <motion.p custom={3} variants={textAnimation}>От знакомства с перспективными инвестиционными проектами до приобретения семейной резиденции для комфортного проживания – <span>INVESTMENT CORPORATION</span> ваш проводник к идеальному выбору недвижимости</motion.p>
                         </div>
                         <img src={gif02} alt="" srcset="" />
 
