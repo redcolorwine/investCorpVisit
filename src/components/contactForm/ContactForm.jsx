@@ -42,13 +42,13 @@ const ContactForm = () => {
 
             <form onSubmit={sendEmail}>
                 <label htmlFor="name">Ваше имя:</label>
-                <input type="text" name="user_name" id="userName" value={uname} onChange={(e) => setUname(e.target.value)} />
+                <input type="text" name="user_name" id="userName" value={uname} onChange={(e) => setUname(e.target.value)}  required/>
                 <label htmlFor="emailFrom">Ваш электронный адрес:</label>
-                <input type="text" name="email_from" id="emailFrom" value={uemail} onChange={(e) => setUemail(e.target.value)} />
+                <input type="text" name="email_from" id="emailFrom" value={uemail} onChange={(e) => setUemail(e.target.value)} required/>
                 <label htmlFor="phone">Ваш номер телефона:</label>
-                <input type="tel" name="phone_From" id="phoneFrom" value={num} onChange={(e) => setNum(e.target.value)} />
+                <input type="tel" name="phone_From" id="phoneFrom" value={num} onChange={(e) => setNum(e.target.value)} required/>
                 <textarea name="message" id="message" cols="30" rows="10" value={mes} onChange={(e) => setMes(e.target.value)} placeholder='Задайте свой вопрос'></textarea>
-                <input type="checkbox" name="ck" id="" defaultChecked={checked} onChange={() => setChecked(!checked)} />
+                <input type="checkbox" name="ck" id="" defaultChecked={checked} onChange={() => setChecked(!checked)} required/>
                 <label htmlFor="ck">Согласен с обработкой персональных данных</label>
                 <input type="submit" value="Отправить" />
                 {errMes && <div className={cmodule.errorMessage}><p>Вы не согласились с политикой обработки персональных данных, остались пустые поля или ошибка в заполнении формы.</p></div>}
