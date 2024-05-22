@@ -4,7 +4,7 @@ import { FiAlignJustify } from 'react-icons/fi';
 import { FiX } from "react-icons/fi";
 import { motion } from "framer-motion"
 import { useNavigate } from 'react-router-dom';
-import logo from './../../media/logo/Investment corporation.png';
+import logo from './../../media/logo/Investment corporation3.png';
 
 const Header = (props) => {
 
