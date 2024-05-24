@@ -53,9 +53,8 @@ const Header = (props) => {
                     </div>
                 </div>
                 <div className={cmedia.consult}>
-                    <p><a href="#">ОСТАВИТЬ ЗАЯВКУ</a></p>
-                    <p><a href="#">ПОЛУЧИТЬ ПРЕЗЕНТАЦИЮ</a></p>
                     <p><span>+7 (963) 995-13-66</span></p>
+                    <p><span>investment.corporation@invest-corp.ru</span></p>
                 </div>
 
             </div>
