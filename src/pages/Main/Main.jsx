@@ -18,6 +18,8 @@ import AccordeonItem from '../../components/accordeonItem/AccordeonItem';
 import ContactForm from '../../components/contactForm/ContactForm';
 
 const Main = (props) => {
+    const formRef = useRef();
+
     const textAnimation = {
         hidden: {
             x: -100,
@@ -51,6 +53,9 @@ const Main = (props) => {
             transition: { delay: custom * 0.2 }
         })
     }
+    const goForm = async () => {
+        formRef.current.scrollIntoView({ behavior: "smooth" });
+    };
 
     return (
         <>
@@ -137,7 +142,7 @@ const Main = (props) => {
                         <img src={imgH} alt="" />
                         <div className="searchText">
                             <p>Получить персонализированную подборку по вашим параметрам</p>
-                            <button>ОСТАВИТЬ ЗАЯВКУ</button>
+                            <button onClick={()=>goForm()}>ОСТАВИТЬ ЗАЯВКУ</button>
                         </div>
                     </div>
                 </div>
@@ -185,7 +190,7 @@ const Main = (props) => {
 
 
                         </div>
-                        <div className="rightSide">
+                        <div className="rightSide" ref={formRef}>
                             <ContactForm />
                         </div>
 
