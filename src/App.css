@@ -91,6 +91,7 @@ body, html {
 }
 
 .aboutWrapper {
+  margin-top: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -111,6 +112,7 @@ body, html {
 
 .aboutText p {
   color: gray;
+  text-align: justify;
 }
 
 .aboutText p>span {
@@ -380,7 +382,10 @@ p.accActive {
   display: flex;
   gap: 20px;
 }
-
+.socIcons a{
+ text-decoration: none;
+ color: white;
+}
 .rightSide {
   width: 50%;
   padding: 5px;
