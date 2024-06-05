@@ -1,21 +1,22 @@
 import React from 'react'
 import './../../App.css';
-import gif02 from './../../media/gifs/gif5tr.gif';
-import gif03 from './../../media/gifs/gftr2.gif';
 import { FiMinus } from "react-icons/fi";
 import { motion } from "framer-motion";
 import { CiMail } from "react-icons/ci";
 import { CiPhone } from "react-icons/ci";
-import { FiPlus } from "react-icons/fi";
 import { PiWhatsappLogoThin } from "react-icons/pi";
 import { IoLogoInstagram } from "react-icons/io";
 import { PiTelegramLogoThin } from "react-icons/pi";
-import imgP1 from './../../media/images/3d-rendering-online-avatar-design.jpg';
-import imgP2 from './../../media/images/7828579.jpg';
-import imgH from './../../media/images/house.jpg';
 import { useRef, useState } from 'react';
 import AccordeonItem from '../../components/accordeonItem/AccordeonItem';
 import ContactForm from '../../components/contactForm/ContactForm';
+import gif02 from './../../media/gifs/gif5tr.gif';
+import gif03 from './../../media/gifs/gftr2.gif';
+import imgP1 from './../../media/images/3d-rendering-online-avatar-design.jpg';
+import imgP2 from './../../media/images/7828579.jpg';
+import imgH from './../../media/images/house.jpg';
+import elen1 from './../../media/photo/elen1.jpg';
+import elen2 from './../../media/photo/elen2.jpg';
 
 const Main = (props) => {
     const formRef = useRef();
@@ -91,21 +92,25 @@ const Main = (props) => {
                     <motion.div className="teamWrapper" initial={'hidden'}
                         whileInView={'visible'} viewport={{ amount: 0.2 }}>
                         <div className="memCard">
-                            <img src={imgP1} alt="team1" />
+                            <img src={elen1} alt="team1" />
                             <div className="memText">
-                                <h4>Виолетта Сергеевна</h4>
-                                <motion.p custom={2} variants={textAnimation2}><span>10 ЛЕТ</span></motion.p>
+                                <h4>Елена Григорян</h4>
+                                <motion.p custom={2} variants={textAnimation2}><span>Основатель компании</span></motion.p>
+                                <p>Мы дружная, сплоченная команда единомышленников, влюбленных в свое дело!</p>
+                                <motion.p custom={4} variants={textAnimation2}><span>Цель нашей компании</span></motion.p>
+                                <p>Наша главная цель - развитие и рост. У нас нет подчиненных, в нашей команде только партнерские отношения. Мы современная компания, создающая тренды и нацеленная на результат.</p>
+                                {/* <motion.p custom={2} variants={textAnimation2}><span>10 ЛЕТ</span></motion.p>
                                 <p>Опыт работа у ведущего застройщика</p>
                                 <motion.p custom={4} variants={textAnimation2}><span> {'>1500'}</span></motion.p>
                                 <p>Реализованных сделок</p>
                                 <motion.p custom={6} variants={textAnimation2} className='descrMem'>
                                     «Ежедневно встречаясь с людьми, которые находятся на этапе принятия решения о покупке квартиры, я научился распознавать истинные желания клиентов и предлагать только то, что будет отвечать их запросам. Так родилась идея создать персональный сервис, способный аккумулировать в себе все предложения на рынке Москвы и выдать решение, адаптированное под вас»
-                                </motion.p>
+                                </motion.p> */}
                             </div>
                         </div>
 
-                        <div className="memCard">
-                            <img src={imgP2} alt="team1" />
+                        {/* <div className="memCard">
+                            <img src={elen2} alt="team1" />
                             <div className="memText">
                                 <h4>Алина Александровна</h4>
                                 <motion.p custom={2} variants={textAnimation2}><span>10 ЛЕТ</span></motion.p>
@@ -116,7 +121,7 @@ const Main = (props) => {
                                     «Ежедневно встречаясь с людьми, которые находятся на этапе принятия решения о покупке квартиры, я научился распознавать истинные желания клиентов и предлагать только то, что будет отвечать их запросам. Так родилась идея создать персональный сервис, способный аккумулировать в себе все предложения на рынке Москвы и выдать решение, адаптированное под вас»
                                 </motion.p>
                             </div>
-                        </div>
+                        </div> */}
                     </motion.div>
                 </div>
 
@@ -142,7 +147,7 @@ const Main = (props) => {
                         <img src={imgH} alt="" />
                         <div className="searchText">
                             <p>Получить персонализированную подборку по вашим параметрам</p>
-                            <button onClick={()=>goForm()}>ОСТАВИТЬ ЗАЯВКУ</button>
+                            <button onClick={() => goForm()}>ОСТАВИТЬ ЗАЯВКУ</button>
                         </div>
                     </div>
                 </div>

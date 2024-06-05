@@ -143,7 +143,7 @@ body, html {
   width: 350px;
   border-radius: 30px;
   object-fit: cover;
-  filter: brightness(0.6) contrast(0.8);
+  filter: brightness(0.7) contrast(0.9);
 }
 
 
@@ -161,12 +161,20 @@ body, html {
 
 }
 
-.team .memCard .memText {
+/* .team .memCard .memText {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin-left: -60px;
   width: 300px;
+  z-index: 1;
+} */
+.team .memCard .memText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 60px;
+  width: auto;
   z-index: 1;
 }
 
@@ -382,10 +390,12 @@ p.accActive {
   display: flex;
   gap: 20px;
 }
-.socIcons a{
- text-decoration: none;
- color: white;
+
+.socIcons a {
+  text-decoration: none;
+  color: white;
 }
+
 .rightSide {
   width: 50%;
   padding: 5px;
@@ -495,17 +505,24 @@ p.accActive {
     align-items: center;
   }
 
-  .team .memCard {
+  /* .team .memCard {
     display: flex;
     width: 440px;
+  } */
+  .team .memCard {
+    display: flex;
+    width: auto;
   }
-
-  .team .memCard .memText {
+  /* .team .memCard .memText {
     margin-left: -180px;
     width: 300px;
     font-size: 10pt;
+  } */
+  .team .memCard .memText {
+    margin-left: 60px;
+    width: auto;
+    font-size: 10pt;
   }
-
   .team .memCard .memText h4 {
     font-size: 16pt;
   }
@@ -900,7 +917,7 @@ p.accActive {
 
   .socIcons>a {
     text-decoration: none;
-    color:white;
+    color: white;
   }
 
   .rightSide {
@@ -932,7 +949,6 @@ p.accActive {
   .mainBlock {
     height: 100vh;
     width: 100%;
-
     background-color: rgb(24, 24, 24);
   }
 
