@@ -1,3 +1,7 @@
+@font-face {
+  font-family: monsterratItalic;
+  src: url('./media/fonts/Monsterrat/MontserratAlternates-LightItalic.ttf');
+}
 * {
   padding: 0;
   margin: 0;
@@ -65,7 +69,7 @@ body, html {
   /* margin-left: 150px; */
   width: 400px;
   color: ghostwhite;
-  font-family: 'Century Gothic', SomeFont, sans-serif;
+  font-family: monsterratItalic, 'Century Gothic', SomeFont, sans-serif;
 }
 
 /*ABOUT*/
@@ -1195,7 +1199,7 @@ p.accActive {
   .mainBlock {
     height: 100vh;
     width: 100%;
-
+    /* text-align: center; */
   }
 
   .mainBlock .mainText {
@@ -1213,9 +1217,12 @@ p.accActive {
   }
 
   .mainBlock .mainText p {
-    font-size: 10pt;
-    width: 100%;
-    margin-left: 10px;
+    font-size: 8pt;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    font-family: monsterratItalic;
+    color:gainsboro;
   }
 
   .aboutBlock {

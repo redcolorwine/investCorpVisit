@@ -10,12 +10,10 @@ import { PiTelegramLogoThin } from "react-icons/pi";
 import { useRef, useState } from 'react';
 import AccordeonItem from '../../components/accordeonItem/AccordeonItem';
 import ContactForm from '../../components/contactForm/ContactForm';
-import gif02 from './../../media/gifs/gif5tr.gif';
+// import gif02 from './../../media/gifs/gif5tr.gif';
+import gif02 from './../../media/gifs/housesgif.gif';
 import gif03 from './../../media/gifs/gftr2.gif';
-import imgP1 from './../../media/images/3d-rendering-online-avatar-design.jpg';
-import imgP2 from './../../media/images/7828579.jpg';
 import imgH from './../../media/images/house.jpg';
-import elen1 from './../../media/photo/elen1.jpg';
 import elen2 from './../../media/photo/elen2.jpg';
 
 const Main = (props) => {
@@ -92,7 +90,7 @@ const Main = (props) => {
                     <motion.div className="teamWrapper" initial={'hidden'}
                         whileInView={'visible'} viewport={{ amount: 0.2 }}>
                         <div className="memCard">
-                            <img src={elen1} alt="team1" />
+                            <img src={elen2} alt="team1" />
                             <div className="memText">
                                 <h4>Елена Григорян</h4>
                                 <motion.p custom={2} variants={textAnimation2}><span>Основатель компании</span></motion.p>

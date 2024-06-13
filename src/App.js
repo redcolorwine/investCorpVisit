@@ -1,15 +1,6 @@
 import './App.css';
 import Header from './components/header/Header';
-import gif02 from './media/gifs/gif5.gif';
-import gif03 from './media/gifs/gif1.gif';
-import { FiMinus } from "react-icons/fi";
-import { motion } from "framer-motion";
-import { FiPlus } from "react-icons/fi";
-import imgP1 from './media/images/3d-rendering-online-avatar-design.jpg';
-import imgP2 from './media/images/7828579.jpg';
-import imgH from './media/images/house.jpg';
 import { useRef, useState } from 'react';
-import AccordeonItem from './components/accordeonItem/AccordeonItem';
 import Footer from './components/footer/Footer';
 import { Route, Routes } from 'react-router-dom';
 import Main from './pages/Main/Main';
