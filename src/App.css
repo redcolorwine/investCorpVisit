@@ -2,10 +2,22 @@
   font-family: monsterratItalic;
   src: url('./media/fonts/Monsterrat/MontserratAlternates-LightItalic.ttf');
 }
+@font-face {
+  font-family: monsterratMedium;
+  src: url('./media/fonts/Monsterrat/MontserratAlternates-Light.ttf');
+}
+@font-face {
+  font-family: monsterratLight;
+  src: url('./media/fonts/Monsterrat/MontserratAlternates-ExtraLight.ttf');
+}
+@font-face {
+  font-family: Comfortaa;
+  src: url('./media/fonts/Comfortaa/Comfortaa-Light.ttf');
+}
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Century Gothic', SomeFont, sans-serif;
+  font-family: Comfortaa,'Century Gothic', SomeFont, sans-serif;
 
 }
 
@@ -69,7 +81,7 @@ body, html {
   /* margin-left: 150px; */
   width: 400px;
   color: ghostwhite;
-  font-family: monsterratItalic, 'Century Gothic', SomeFont, sans-serif;
+  font-family: Comfortaa, 'Century Gothic', SomeFont, sans-serif;
 }
 
 /*ABOUT*/
@@ -121,6 +133,7 @@ body, html {
 
 .aboutText p>span {
   color: whitesmoke;
+  
 }
 
 /*TEAM*/
@@ -185,7 +198,11 @@ body, html {
 .team .memCard .memText h4 {
   font-size: 20pt;
 }
-
+.team .memCard .memText p{
+  /* font-family: monsterratMedium; */
+  color:rgb(204, 202, 202);
+  color:gray;
+}
 .team .memCard .memText p>span {
   color: rgb(255, 255, 255);
   font-size: 15pt;
@@ -480,6 +497,7 @@ p.accActive {
 
   .aboutText p {
     color: gray;
+    
   }
 
   /*TEAM*/
@@ -1208,20 +1226,24 @@ p.accActive {
     top: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-
+    text-align: center;
   }
 
   .mainBlock .mainText h1 {
-    font-size: 25pt;
-    margin-left: 10px;
+    font-size: 35pt;
+    /* margin-left: 10px; */
   }
 
   .mainBlock .mainText p {
-    font-size: 8pt;
-    width: 50%;
+    width: 100%;
+    font-size: 12pt;
+    /* margin-left: 10px; */
+    /* width: 80%; */
+    /* width: 50%;
     position: absolute;
-    right: 0;
-    font-family: monsterratItalic;
+    right: 0; */
+    margin-top: 10px;
+    /* font-family: monsterratMedium; */
     color:gainsboro;
   }
 
