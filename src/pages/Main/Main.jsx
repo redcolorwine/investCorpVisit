@@ -64,7 +64,7 @@ const Main = (props) => {
                 <div className="mainText">
                     <h1>INVESTMENT CORPORATION</h1>
                     <motion.p initial={'hidden'}
-                        whileInView={'visible'} transition={{ duration: 1.5 }}  custom={4} variants={textAnimation}>ваш персональный помощник <br></br>в поиске <span>лучшей недвижимости</span></motion.p>
+                        whileInView={'visible'} transition={{ duration: 2 }}  custom={4} variants={textAnimation}>ваш персональный помощник <br></br>в поиске <span>лучшей недвижимости</span></motion.p>
                 </div>
 
             </div >
