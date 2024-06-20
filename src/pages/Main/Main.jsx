@@ -15,7 +15,7 @@ import gif02 from './../../media/gifs/housesgif.gif';
 import gif03 from './../../media/gifs/gftr2.gif';
 import imgH from './../../media/images/house.jpg';
 import elen2 from './../../media/photo/elen2.jpg';
-import backgr from './../../media/back4.jpg';
+import backgr from './../../media/back10.jpg';
 
 const Main = (props) => {
     const formRef = useRef();
@@ -63,7 +63,8 @@ const Main = (props) => {
                 <img src={backgr} alt="" srcset="" />
                 <div className="mainText">
                     <h1>INVESTMENT CORPORATION</h1>
-                    <p>ваш персональный помощник<br /> в поиске <span>лучшей недвижимости</span></p>
+                    <motion.p initial={'hidden'}
+                        whileInView={'visible'} transition={{ duration: 1.5 }}  custom={4} variants={textAnimation}>ваш персональный помощник <br></br>в поиске <span>лучшей недвижимости</span></motion.p>
                 </div>
 
             </div >

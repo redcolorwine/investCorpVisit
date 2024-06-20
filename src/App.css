@@ -74,7 +74,7 @@ body, html {
   height: 100vh;
   width: 100vw;
   object-fit: cover;
-  filter: contrast(1) brightness(0.4);
+  filter: contrast(1.1) brightness(0.3);
 }
 .mainBlock .mainText {
   position: absolute;
@@ -1002,14 +1002,18 @@ p.accActive {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    width: 550px;
+    text-align: center;
   }
 
   .mainBlock .mainText h1 {
-    font-size: 25pt;
+    font-size: 9vw;
+   
   }
 
   .mainBlock .mainText p {
-    font-size: 10pt;
+    font-size: 12pt;
+ 
     /* width: 400px; */
   }
 
@@ -1254,21 +1258,12 @@ p.accActive {
 
   .mainBlock .mainText h1 {
     font-size: 12vw;
-    /* margin-left: 10px; */
   }
 
   .mainBlock .mainText p {
     width: 100%;
-    font-size: 14pt;
-    /* margin-left: 10px; */
-    /* width: 80%; */
-    /* width: 50%;
-    position: absolute;
-    right: 0; */
-    
+    font-size: 4vw;
     margin-top: 10px;
-    /* font-family: monsterratMedium; */
-    /* color: gainsboro; */
   }
 
   .aboutBlock {
