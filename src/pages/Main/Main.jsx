@@ -44,11 +44,33 @@ const Main = (props) => {
     }
     const textAnimation3 = {
         hidden: {
-            x: 10,
+            x: 0,
             opacity: 0,
         },
         visible: custom => ({
             x: 0,
+            opacity: 1,
+            transition: { delay: custom * 0.2 }
+        })
+    }
+    const textAnimation4 = {
+        hidden: {
+            y: -100,
+            opacity: 0,
+        },
+        visible: custom => ({
+            y: 0,
+            opacity: 1,
+            transition: { delay: custom * 0.2 }
+        })
+    }
+    const textAnimation5 = {
+        hidden: {
+            y: 100,
+            opacity: 0,
+        },
+        visible: custom => ({
+            y: 0,
             opacity: 1,
             transition: { delay: custom * 0.2 }
         })
@@ -62,9 +84,10 @@ const Main = (props) => {
             <div className="mainBlock" ref={props.mainRef}>
                 <img src={backgr} alt="" srcset="" />
                 <div className="mainText">
-                    <h1>INVESTMENT CORPORATION</h1>
+                    <motion.h1 initial={'hidden'}
+                        whileInView={'visible'}  custom={3} variants={textAnimation4}>INVESTMENT CORPORATION</motion.h1>
                     <motion.p initial={'hidden'}
-                        whileInView={'visible'} transition={{ duration: 2 }}  custom={4} variants={textAnimation}>ваш персональный помощник <br></br>в поиске <span>лучшей недвижимости</span></motion.p>
+                        whileInView={'visible'}  custom={6} variants={textAnimation5}>ваш персональный помощник <br></br>в поиске <span>лучшей недвижимости</span></motion.p>
                 </div>
 
             </div >
