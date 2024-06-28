@@ -121,6 +121,7 @@
       }
       .memCard .memText p{
         font-size: 10pt;
+        text-align: left;
        
       }
       .memCard .memText p>span {
