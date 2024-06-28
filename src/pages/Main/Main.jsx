@@ -15,66 +15,17 @@ import gif02 from './../../media/gifs/housesgif.gif';
 import gif03 from './../../media/gifs/gftr2.gif';
 import imgH from './../../media/images/house.jpg';
 import elen2 from './../../media/photo/elen2.jpg';
+import valery from './../../media/photo/Валерия Главная.jpeg';
+import eva from './../../media/photo/Асатрян Ева.jpeg';
+import nastya from './../../media/photo/Анастасия.jpg';
 import backgr from './../../media/back10.jpg';
+import { textAnimation, textAnimation2, textAnimation3, textAnimation4, textAnimation5 } from '../../animations';
+import MemCard from '../../components/employee/memCard';
 
 const Main = (props) => {
     const formRef = useRef();
 
-    const textAnimation = {
-        hidden: {
-            x: -100,
-            opacity: 0,
-        },
-        visible: custom => ({
-            x: 0,
-            opacity: 1,
-            transition: { delay: custom * 0.2 }
-        })
-    }
-    const textAnimation2 = {
-        hidden: {
-            x: 10,
-            opacity: 0,
-        },
-        visible: custom => ({
-            x: 0,
-            opacity: 1,
-            transition: { delay: custom * 0.2 }
-        })
-    }
-    const textAnimation3 = {
-        hidden: {
-            x: 0,
-            opacity: 0,
-        },
-        visible: custom => ({
-            x: 0,
-            opacity: 1,
-            transition: { delay: custom * 0.2 }
-        })
-    }
-    const textAnimation4 = {
-        hidden: {
-            y: -100,
-            opacity: 0,
-        },
-        visible: custom => ({
-            y: 0,
-            opacity: 1,
-            transition: { delay: custom * 0.2 }
-        })
-    }
-    const textAnimation5 = {
-        hidden: {
-            y: 100,
-            opacity: 0,
-        },
-        visible: custom => ({
-            y: 0,
-            opacity: 1,
-            transition: { delay: custom * 0.2 }
-        })
-    }
+
     const goForm = async () => {
         formRef.current.scrollIntoView({ behavior: "smooth" });
     };
@@ -85,9 +36,9 @@ const Main = (props) => {
                 <img src={backgr} alt="" srcset="" />
                 <div className="mainText">
                     <motion.h1 initial={'hidden'}
-                        whileInView={'visible'}  custom={3} variants={textAnimation4}>INVESTMENT CORPORATION</motion.h1>
+                        whileInView={'visible'}  custom={3} variants={textAnimation3}>INVESTMENT CORPORATION</motion.h1>
                     <motion.p initial={'hidden'}
-                        whileInView={'visible'}  custom={6} variants={textAnimation5}>ваш персональный помощник <br></br>в поиске <span>лучшей недвижимости</span></motion.p>
+                        whileInView={'visible'} custom={6} variants={textAnimation3}>ваш персональный помощник <br></br>в поиске <span>лучшей недвижимости</span></motion.p>
                 </div>
 
             </div >
@@ -113,40 +64,12 @@ const Main = (props) => {
 
                 <div className="team" ref={props.teamRef}>
                     <h1>[02] <FiMinus size={25} /> КОМАНДА</h1>
-                    <motion.div className="teamWrapper" initial={'hidden'}
-                        whileInView={'visible'} viewport={{ amount: 0.2 }}>
-                        <div className="memCard">
-                            <img src={elen2} alt="team1" />
-                            <div className="memText">
-                                <h4>Елена Григорян</h4>
-                                <motion.p custom={2} variants={textAnimation2}><span>Основатель компании</span></motion.p>
-                                <p>Мы дружная, сплоченная команда единомышленников, влюбленных в свое дело!</p>
-                                <motion.p custom={4} variants={textAnimation2}><span>Цель нашей компании</span></motion.p>
-                                <p>Наша главная цель - развитие и рост. У нас нет подчиненных, в нашей команде только партнерские отношения. Мы современная компания, создающая тренды и нацеленная на результат.</p>
-                                {/* <motion.p custom={2} variants={textAnimation2}><span>10 ЛЕТ</span></motion.p>
-                                <p>Опыт работа у ведущего застройщика</p>
-                                <motion.p custom={4} variants={textAnimation2}><span> {'>1500'}</span></motion.p>
-                                <p>Реализованных сделок</p>
-                                <motion.p custom={6} variants={textAnimation2} className='descrMem'>
-                                    «Ежедневно встречаясь с людьми, которые находятся на этапе принятия решения о покупке квартиры, я научился распознавать истинные желания клиентов и предлагать только то, что будет отвечать их запросам. Так родилась идея создать персональный сервис, способный аккумулировать в себе все предложения на рынке Москвы и выдать решение, адаптированное под вас»
-                                </motion.p> */}
-                            </div>
-                        </div>
-
-                        {/* <div className="memCard">
-                            <img src={elen2} alt="team1" />
-                            <div className="memText">
-                                <h4>Алина Александровна</h4>
-                                <motion.p custom={2} variants={textAnimation2}><span>10 ЛЕТ</span></motion.p>
-                                <p>Опыт работа у ведущего застройщика</p>
-                                <motion.p custom={4} variants={textAnimation2}><span> {'>1500'}</span></motion.p>
-                                <p>Реализованных сделок</p>
-                                <motion.p custom={6} variants={textAnimation2} className='descrMem'>
-                                    «Ежедневно встречаясь с людьми, которые находятся на этапе принятия решения о покупке квартиры, я научился распознавать истинные желания клиентов и предлагать только то, что будет отвечать их запросам. Так родилась идея создать персональный сервис, способный аккумулировать в себе все предложения на рынке Москвы и выдать решение, адаптированное под вас»
-                                </motion.p>
-                            </div>
-                        </div> */}
-                    </motion.div>
+                    <div className="teamWrapper">
+                        <MemCard image={elen2} animation={textAnimation} about={'Основатель компании'} name={'Елена Григорян'} custom={3} aboutText={'Наша главная цель - развитие и рост. У нас нет подчиненных, в нашей команде только партнерские отношения. Мы современная компания, создающая тренды и нацеленная на результат.'} />
+                        <MemCard image={valery} animation={textAnimation2} about={'Руководитель отдела торговых помещений'} name={'Валерия Главная'} custom={3} aboutText={'Мы дружная, сплоченная команда единомышленников, влюбленных в свое дело!'} />
+                        <MemCard image={eva} animation={textAnimation} about={'Руководитель отдела офиса'} name={'Ева Асатрян'} custom={5} aboutText={'Недвижимость - это комплексная и динамическая сфера. Не существует универсального рецепта успеха. Важно изучать, анализировать, быть готовым к изменениям. И мы Вам с этим поможем!'} />
+                        <MemCard image={nastya} animation={textAnimation2} about={'Руководитель отдела офиса'} name={'Анастасия Краморенко'} custom={5} aboutText={'Мы дружная, сплоченная команда единомышленников, влюбленных в свое дело!'} />
+                    </div>
                 </div>
 
                 <motion.div className="services" ref={props.servicesRef} initial={'hidden'}

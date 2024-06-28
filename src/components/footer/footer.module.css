@@ -15,7 +15,7 @@
 }
 
 .footerWrapper p>span {
-    color: goldenrod;
+    color: rgb(224, 183, 127);
 }
 
 .logo img {
@@ -35,7 +35,7 @@
 }
 
 .footer .privacy p>a {
-    color: goldenrod;
+    color: rgb(224, 183, 127);
 }
 
 

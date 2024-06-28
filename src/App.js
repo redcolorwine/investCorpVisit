@@ -8,39 +8,7 @@ import Privacy from './pages/Privacy/Privacy';
 
 function App() {
 
-  const textAnimation = {
-    hidden: {
-      x: -100,
-      opacity: 0,
-    },
-    visible: custom => ({
-      x: 0,
-      opacity: 1,
-      transition: { delay: custom * 0.2 }
-    })
-  }
-  const textAnimation2 = {
-    hidden: {
-      x: 300,
-      opacity: 0,
-    },
-    visible: custom => ({
-      x: 0,
-      opacity: 1,
-      transition: { delay: custom * 0.2 }
-    })
-  }
-  const textAnimation3 = {
-    hidden: {
-      x: -300,
-      opacity: 0,
-    },
-    visible: custom => ({
-      x: 0,
-      opacity: 1,
-      transition: { delay: custom * 0.2 }
-    })
-  }
+ 
   const mainRef = useRef();
   const aboutRef = useRef();
   const teamRef = useRef();

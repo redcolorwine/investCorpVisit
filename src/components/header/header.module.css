@@ -29,7 +29,7 @@
 
 .menuWrapper nav li:hover {
     cursor: pointer;
-    color: goldenrod;
+    color: rgb(224, 183, 127);
 }
 
 .header .logo h1 {

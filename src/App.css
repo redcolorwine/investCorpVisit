@@ -174,13 +174,6 @@ body, html {
   /* padding-left: 350px; */
 }
 
-.team .memCard>img {
-  height: 500px;
-  width: 350px;
-  border-radius: 30px;
-  object-fit: cover;
-  filter: brightness(0.7) contrast(0.9);
-}
 
 
 
@@ -188,51 +181,12 @@ body, html {
   margin-top: 60px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+   gap: 40px; 
   align-items: center;
 }
 
-.team .memCard {
-  display: flex;
-  width: 800px;
 
-}
-
-/* .team .memCard .memText {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin-left: -60px;
-  width: 300px;
-  z-index: 1;
-} */
-.team .memCard .memText {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin-left: 60px;
-  width: auto;
-  z-index: 1;
-}
-
-.team .memCard .memText h4 {
-  font-size: 20pt;
-}
-
-.team .memCard .memText p {
-  /* font-family: monsterratMedium; */
-  color: rgb(204, 202, 202);
-  color: gray;
-}
-
-.team .memCard .memText p>span {
-  color: rgb(255, 255, 255);
-  font-size: 15pt;
-  font-weight: 900;
-}
-
-.team .memCard .memText .descrMem {
-  color: rgb(218, 205, 205);
-}
 
 /*SERVICES*/
 .services {
@@ -417,7 +371,7 @@ p.accActive {
 }
 
 .leftSide span {
-  color: goldenrod;
+  color: rgb(224, 183, 127);
   font-size: 15pt;
 }
 
@@ -535,10 +489,7 @@ p.accActive {
 
   }
 
-  .team .memCard>img {
-    height: 400px;
-    width: 400px;
-  }
+
 
   .teamWrapper {
     margin-top: 60px;
@@ -548,34 +499,7 @@ p.accActive {
     align-items: center;
   }
 
-  /* .team .memCard {
-    display: flex;
-    width: 440px;
-  } */
-  .team .memCard {
-    display: flex;
-    width: auto;
-  }
-
-  /* .team .memCard .memText {
-    margin-left: -180px;
-    width: 300px;
-    font-size: 10pt;
-  } */
-  .team .memCard .memText {
-    margin-left: 60px;
-    width: auto;
-    font-size: 10pt;
-  }
-
-  .team .memCard .memText h4 {
-    font-size: 16pt;
-  }
-
-  .team .memCard .memText p>span {
-    font-size: 12pt;
-    font-weight: 900;
-  }
+  
 
 
   /*SERVICES*/
@@ -770,12 +694,7 @@ p.accActive {
 
   }
 
-  .team .memCard>img {
-    height: 400px;
-    width: 50%;
-    object-fit: cover;
-  }
-
+  
   .teamWrapper {
     margin-top: 60px;
     display: flex;
@@ -785,31 +704,7 @@ p.accActive {
     align-items: center;
   }
 
-  .team .memCard {
-    display: flex;
-    width: 100%;
-    gap: 10px;
-  }
-
-  .team .memCard .memText {
-    margin-left: 0px;
-    width: 45%;
-    padding: 15px;
-    font-size: 10pt;
-  }
-
-  .team .memCard .descrMem {
-    padding-right: 5px;
-  }
-
-  .team .memCard .memText h4 {
-    font-size: 16pt;
-  }
-
-  .team .memCard .memText p>span {
-    font-size: 12pt;
-    font-weight: 900;
-  }
+  
 
 
   /*SERVICES*/
@@ -943,7 +838,7 @@ p.accActive {
   }
 
   .leftSide span {
-    color: goldenrod;
+    color: rgb(224, 183, 127);
     font-size: 15pt;
   }
 
@@ -1074,12 +969,7 @@ p.accActive {
 
   }
 
-  .team .memCard>img {
-    height: 500px;
-    width: 95%;
-    object-fit: cover;
-    margin: 0 auto;
-  }
+  
 
   .teamWrapper {
     margin-top: 60px;
@@ -1090,33 +980,7 @@ p.accActive {
     align-items: center;
   }
 
-  .team .memCard {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 10px;
-  }
-
-  .team .memCard .memText {
-    margin-left: 0px;
-    width: 95%;
-    padding: 15px;
-    font-size: 10pt;
-    text-align: justify;
-  }
-
-  .team .memCard .descrMem {
-    padding-right: 5px;
-  }
-
-  .team .memCard .memText h4 {
-    font-size: 16pt;
-  }
-
-  .team .memCard .memText p>span {
-    font-size: 12pt;
-    font-weight: 900;
-  }
+  
 
 
   /*SERVICES*/
