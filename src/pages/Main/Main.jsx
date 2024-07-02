@@ -12,7 +12,7 @@ import AccordeonItem from '../../components/accordeonItem/AccordeonItem';
 import ContactForm from '../../components/contactForm/ContactForm';
 import gif02 from './../../media/gifs/housegifcrop.gif';
 import gif03 from './../../media/gifs/gftr2.gif';
-import imgH from './../../media/room1.jpg';
+import imgH from './../../media/estate.jpg';
 import elen2 from './../../media/photo/elen2.jpg';
 import valery from './../../media/photo/Валерия Главная.jpeg';
 import eva from './../../media/photo/Асатрян Ева.jpeg';
@@ -64,10 +64,10 @@ const Main = (props) => {
                 <div className="team" ref={props.teamRef}>
                     <h1>[02] <FiMinus size={25} /> КОМАНДА</h1>
                     <div className="teamWrapper">
-                        <MemCard image={elen2} animation={textAnimation} about={'Основатель компании'} name={'Елена Григорян'} custom={3} aboutText={'Наша главная цель - развитие и рост. У нас нет подчиненных, в нашей команде только партнерские отношения. Мы современная компания, создающая тренды и нацеленная на результат.'} />
-                        <MemCard image={nastya} animation={textAnimation2} about={'Руководитель отдела офиса'} name={'Анастасия Краморенко'} custom={5} aboutText={'Брокер - это очень интересная, многогранная профессия, которая при должном усердии непременно ведет к успеху и высокому уровню заработка. А наша команда готова обучить всем необходимым навыкам и помочь в развитии в данном деле.'} />
+                        <MemCard image={elen2} animation={textAnimation} about={'Основатель компании'} name={'Елена Григорян'} custom={3} aboutText={'У нас нет подчиненных, в нашей команде только партнерские отношения. Мы современная компания, создающая тренды и нацеленная на результат. Мы дружная, сплоченная команда единомышленников, влюбленных в свое дело! Наша цель - развитие и рост.'} />
+                        <MemCard image={nastya} animation={textAnimation2} about={'Руководитель отдела офиса'} name={'Анастасия Краморенко'} custom={5} aboutText={'Ключ к успеху в сфере недвижимости - это не только знание рынка, но и умение понимать потребности людей. Мы стремимся к тому, чтобы каждый клиент стал нашим постоянным партнером, возвращаясь к нам снова и снова.'} />
                         <MemCard image={eva} animation={textAnimation} about={'Руководитель отдела офиса'} name={'Ева Асатрян'} custom={5} aboutText={'Недвижимость - это комплексная и динамическая сфера. Не существует универсального рецепта успеха. Важно изучать, анализировать, быть готовым к изменениям. И мы Вам с этим поможем!'} />
-                        <MemCard image={valery} animation={textAnimation2} about={'Руководитель отдела торговых помещений'} name={'Валерия Главная'} custom={3} aboutText={'Мы дружная, сплоченная команда единомышленников, влюбленных в свое дело! Наша цель - развитие и рост.'} />
+                        <MemCard image={valery} animation={textAnimation2} about={'Руководитель отдела торговых помещений'} name={'Валерия Главная'} custom={3} aboutText={'Брокер - это очень интересная, многогранная профессия, которая при должном усердии непременно ведет к успеху и высокому уровню заработка. А наша команда готова обучить всем необходимым навыкам и помочь в развитии в данном деле.'} />
                     </div>
                 </div>
 

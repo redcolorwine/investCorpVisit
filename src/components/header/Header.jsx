@@ -20,6 +20,7 @@ const Header = (props) => {
     }
     const history = useNavigate();
     const onHref = async (e, num) => {
+        console.log(props)
         e.preventDefault();
         setBurger(!burger);
         await history('/');
@@ -32,7 +33,6 @@ const Header = (props) => {
             <div className={cmedia.wrapper}>
                 <FiAlignJustify size={25} color='white' onClick={() => clickBurger()} />
                 <div className={cmedia.logo}>
-                    {/* <h1>INVESTMENT CORPORATION</h1> */}
                     <img src={logo} alt="" />
                 </div>
             </div>
