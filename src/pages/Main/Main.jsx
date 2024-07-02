@@ -11,7 +11,7 @@ import { useRef, useState } from 'react';
 import AccordeonItem from '../../components/accordeonItem/AccordeonItem';
 import ContactForm from '../../components/contactForm/ContactForm';
 import gif02 from './../../media/gifs/housegifcrop.gif';
-import gif03 from './../../media/gifs/gftr2.gif';
+import gif03 from './../../media/gifs/arcAnimation.gif';
 import imgH from './../../media/estate.jpg';
 import elen2 from './../../media/photo/elen2.jpg';
 import valery from './../../media/photo/Валерия Главная.jpeg';
