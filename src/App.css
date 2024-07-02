@@ -1218,3 +1218,14 @@ p.accActive {
     font-size: 11pt;
   }
 }
+
+@media (max-width: 380px) {
+  .slideText h4 {
+    margin-bottom: 10px;
+  }
+
+  .slideText p {
+    color: rgb(187, 181, 181);
+    font-size: 10pt;
+  }
+}
