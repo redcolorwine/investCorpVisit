@@ -8,6 +8,9 @@ import { PiWhatsappLogoThin } from "react-icons/pi";
 import { IoLogoInstagram } from "react-icons/io";
 import { PiTelegramLogoThin } from "react-icons/pi";
 import { useRef, useState } from 'react';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import AccordeonItem from '../../components/accordeonItem/AccordeonItem';
 import ContactForm from '../../components/contactForm/ContactForm';
 import gif02 from './../../media/gifs/housegifcrop.gif';
@@ -18,12 +21,44 @@ import valery from './../../media/photo/Валерия Главная.jpeg';
 import eva from './../../media/photo/Асатрян Ева.jpeg';
 import nastya from './../../media/photo/Анастасия.jpg';
 import backgr from './../../media/back10.jpg';
+import mc1 from './../../media/mc1.jpg';
+import mc2 from './../../media/mc2.jpg';
+import mc3 from './../../media/mc3.jpg';
 import { textAnimation, textAnimation2, textAnimation3, textAnimation4, textAnimation5 } from '../../animations';
 import MemCard from '../../components/employee/memCard';
 
 const Main = (props) => {
     const formRef = useRef();
-
+    var settings = {
+        className: "center",
+        // centerMode: true,
+        infinite: true,
+        centerPadding: "40px",
+        // slidesToShow: 3,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        initialSlide: 0,
+        speed: 500,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 1
+                }
+            }
+        ]
+    };
 
     const goForm = async () => {
         formRef.current.scrollIntoView({ behavior: "smooth" });
@@ -35,7 +70,7 @@ const Main = (props) => {
                 <img src={backgr} alt="" srcset="" />
                 <div className="mainText">
                     <motion.h1 initial={'hidden'}
-                        whileInView={'visible'}  custom={3} variants={textAnimation3}>INVESTMENT CORPORATION</motion.h1>
+                        whileInView={'visible'} custom={3} variants={textAnimation3}>INVESTMENT CORPORATION</motion.h1>
                     <motion.p initial={'hidden'}
                         whileInView={'visible'} custom={6} variants={textAnimation3}>ваш персональный помощник <br></br>в поиске <span>лучшей недвижимости</span></motion.p>
                 </div>
@@ -89,8 +124,35 @@ const Main = (props) => {
 
                 <div className="searchingBest" ref={props.searchRef}>
                     <h1>[04] <FiMinus size={25} /> ПОДБОР ЛУЧШЕЙ НЕДВИЖИМОСТИ</h1>
+                   
                     <div className="searchingWrapper">
-                        <img src={imgH} alt="" />
+                    <Slider {...settings}>
+                        <div>
+                            <div className="slideText">
+                                <h4>Офисы класса A и B+</h4>
+                                <p>Вложения от 10млн. руб.</p>
+                                <p>Площадь от 30 м2</p>
+                            </div>
+
+                            <img src={mc1} alt="" />
+                        </div>
+                        <div>
+                            <div className="slideText">
+                                <h4>Офисы класса A и B+</h4>
+                                <p>Вложения от 10млн. руб.</p>
+                                <p>Площадь от 30 м2</p>
+                            </div>
+                            <img src={mc2} alt="" />
+                        </div>
+                        <div>
+                            <div className="slideText">
+                                <h4>Офисы класса A и B+</h4>
+                                <p>Вложения от 10млн. руб.</p>
+                                <p>Площадь от 30 м2</p>
+                            </div>
+                            <img src={mc3} alt="" />
+                        </div>
+                    </Slider>
                         <div className="searchText">
                             <p>Получить персонализированную подборку по вашим параметрам</p>
                             <button onClick={() => goForm()}>ОСТАВИТЬ ЗАЯВКУ</button>
