@@ -31,7 +31,7 @@ const Main = (props) => {
     const formRef = useRef();
     var settings = {
         className: "center",
-        // centerMode: true,
+        centerMode: true,
         infinite: true,
         centerPadding: "40px",
         // slidesToShow: 3,
