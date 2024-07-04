@@ -14,7 +14,7 @@ import "slick-carousel/slick/slick-theme.css";
 import AccordeonItem from '../../components/accordeonItem/AccordeonItem';
 import ContactForm from '../../components/contactForm/ContactForm';
 import gif02 from './../../media/gifs/housegifcrop.gif';
-import gif03 from './../../media/gifs/hand.gif';
+import gif03 from './../../media/gifs/hand2.gif';
 import imgH from './../../media/estate.jpg';
 import elen2 from './../../media/photo/elen2.jpg';
 import valery from './../../media/photo/Валерия Главная.jpeg';
