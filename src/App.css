@@ -1219,9 +1219,11 @@ p.accActive {
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 460px) {
   .slideText h4 {
     margin-bottom: 10px;
+    width: 200px;
+    font-size: 10pt;
   }
 
   .slideText p {
