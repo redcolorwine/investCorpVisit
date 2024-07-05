@@ -41,7 +41,7 @@ const Main = (props) => {
         speed: 500,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1200,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
@@ -79,7 +79,7 @@ const Main = (props) => {
             <div className="AppWrapper">
 
                 <div className="aboutBlock" ref={props.aboutRef}>
-                    <h1>[01] <FiMinus size={25} /> О НАС</h1>
+                    <h1>О НАС</h1>
                     <motion.div initial={'hidden'}
                         whileInView={'visible'} transition={{ duration: 1.5 }} className="aboutWrapper">
                         <div className="aboutText">
@@ -97,18 +97,18 @@ const Main = (props) => {
                 </div>
 
                 <div className="team" ref={props.teamRef}>
-                    <h1>[02] <FiMinus size={25} /> КОМАНДА</h1>
+                    <h1>КОМАНДА</h1>
                     <div className="teamWrapper">
-                        <MemCard image={elen2} animation={textAnimation} about={'Основатель компании'} name={'Елена Григорян'} custom={3} aboutText={'У нас нет подчиненных, в нашей команде только партнерские отношения. Мы современная компания, создающая тренды и нацеленная на результат. Мы дружная, сплоченная команда единомышленников, влюбленных в свое дело! Наша цель - развитие и рост.'} />
-                        <MemCard image={nastya} animation={textAnimation2} about={'Руководитель отдела офиса'} name={'Анастасия Краморенко'} custom={5} aboutText={'Ключ к успеху в сфере недвижимости - это не только знание рынка, но и умение понимать потребности людей. Мы стремимся к тому, чтобы каждый клиент стал нашим постоянным партнером, возвращаясь к нам снова и снова.'} />
-                        <MemCard image={eva} animation={textAnimation} about={'Руководитель отдела офиса'} name={'Ева Асатрян'} custom={5} aboutText={'Недвижимость - это комплексная и динамическая сфера. Не существует универсального рецепта успеха. Важно изучать, анализировать, быть готовым к изменениям. И мы Вам с этим поможем!'} />
+                        <MemCard image={elen2} animation={textAnimation} about={'Основатель компании'} name={'Елена Григорян'} custom={3} aboutText={'Мы современная компания, создающая тренды и нацеленная на результат. Мы дружная, сплоченная команда единомышленников, влюбленных в свое дело! Наша цель - развитие и рост.'} />
+                        <MemCard image={nastya} animation={textAnimation2} about={'Руководитель отдела офисной недвижимости'} name={'Анастасия Краморенко'} custom={5} aboutText={'Ключ к успеху в сфере недвижимости - это не только знание рынка, но и умение понимать потребности людей. Мы стремимся к тому, чтобы каждый клиент стал нашим постоянным партнером, возвращаясь к нам снова и снова.'} />
+                        <MemCard image={eva} animation={textAnimation} about={'Руководитель отдела офисной недвижимости'} name={'Ева Асатрян'} custom={5} aboutText={'Недвижимость - это комплексная и динамическая сфера. Не существует универсального рецепта успеха. Важно изучать, анализировать, быть готовым к изменениям. И мы Вам с этим поможем!'} />
                         <MemCard image={valery} animation={textAnimation2} about={'Руководитель отдела торговых помещений'} name={'Валерия Главная'} custom={3} aboutText={'Брокер - это очень интересная, многогранная профессия, которая при должном усердии непременно ведет к успеху и высокому уровню заработка. А наша команда готова обучить всем необходимым навыкам и помочь в развитии в данном деле.'} />
                     </div>
                 </div>
 
                 <motion.div className="services" ref={props.servicesRef} initial={'hidden'}
                     whileInView={'visible'} viewport={{ amount: 0.2 }}>
-                    <h1>[03] <FiMinus size={25} /> НАШИ УСЛУГИ</h1>
+                    <h1>НАШИ УСЛУГИ</h1>
                     <div className="servicesWrapper">
                         <div className="servicesText">
                             <div className='serviceType'><span>1</span><motion.p custom={1} variants={textAnimation3}>Переговоры с потенциальными покупателями или арендаторами недвижимости</motion.p></div>
@@ -123,32 +123,29 @@ const Main = (props) => {
                 </motion.div>
 
                 <div className="searchingBest" ref={props.searchRef}>
-                    <h1>[04] <FiMinus size={25} /> ПОДБОР ЛУЧШЕЙ НЕДВИЖИМОСТИ</h1>
+                    <h1>ПОДБОР ЛУЧШЕЙ НЕДВИЖИМОСТИ</h1>
                    
                     <div className="searchingWrapper">
                     <Slider {...settings}>
                         <div>
                             <div className="slideText">
-                                <h4>Офисы класса A и B+</h4>
-                                <p>Вложения от 10млн. руб.</p>
-                                <p>Площадь от 30 м2</p>
+                                <h4>Аренда офисов класса A, А+ и B+</h4>
+                                <p>Площадь от 30 м. 2</p>
                             </div>
 
                             <img src={mc1} alt="" />
                         </div>
                         <div>
                             <div className="slideText">
-                                <h4>Офисы класса A и B+</h4>
-                                <p>Вложения от 10млн. руб.</p>
-                                <p>Площадь от 30 м2</p>
+                                <h4>Продажа офисов класса A, A+ и B+</h4>
+                                <p>Площадь от 30 м. 2</p>
                             </div>
                             <img src={mc2} alt="" />
                         </div>
                         <div>
                             <div className="slideText">
-                                <h4>Офисы класса A и B+</h4>
-                                <p>Вложения от 10млн. руб.</p>
-                                <p>Площадь от 30 м2</p>
+                                <h4>Ритейл</h4>
+                                <p>Площадь от 10 до 10'000 м. 2</p>
                             </div>
                             <img src={mc3} alt="" />
                         </div>
@@ -161,16 +158,16 @@ const Main = (props) => {
                 </div>
 
                 <div className="accordeon" ref={props.accordeonRef}>
-                    <h1>[05] <FiMinus size={25} /> ВОПРОС-ОТВЕТ</h1>
+                    <h1>ВОПРОС-ОТВЕТ</h1>
                     <div className="accorderonWrapper">
                         <AccordeonItem headText={'Почему стоит обратиться в агенство недвижимости INVESTMENT CORPORATION?'} descrText={'ООО "ИНВЕСТМЕНТ КОРПОРЕЙШН" предоставляет полный комплекс риэлторских услуг на рынке недвижимости. Наше агенство работает на результат, оказывая качественные услуги от подбора до заключения. Нашими клиентами являются не только средние, но и крупные известные российские компании.'} />
-                        <AccordeonItem headText={'Почему выгодно сотрудничать с агенством?'} descrText={'Мы сотрудничаем только надежными арендодателями и собственниками.'} />
-                        <AccordeonItem headText={'В чем заключается наша работа?'} descrText={'Мы будем сопровождать Вас на всем пути сделки: от выявления запроса до подписания документов.'} />
+                        <AccordeonItem headText={'Почему выгодно сотрудничать с агенством?'} descrText={'Наше агенство сотрудничает только с надежными арендодателями и собственниками. Мы гордимся нашей командой профессиональных брокеров, ведь опыт каждого от 3-х до 10 лет, а в нашем портфолио множество успешно реализованных сделок с лучшими компаниями страны.'} />
+                        <AccordeonItem headText={'В чем заключается наша работа?'} descrText={'Мы будем сопровождать Вас на всем пути сделки: от выявления запроса до подписания документов. Клиент получает максимально комфортные условия, начиная от привлекательной цены, заканчивая максимальной оперативностью в решении вопросов.'} />
                     </div>
                 </div>
 
                 <div className="contacts" ref={props.contactsRef}>
-                    <h1>[06] <FiMinus size={25} /> КОНТАКТЫ</h1>
+                    <h1>КОНТАКТЫ</h1>
                     <div className="contactsWrapper">
                         <div className="leftSide">
                             <div className="top">
@@ -192,8 +189,8 @@ const Main = (props) => {
                                 <div className='socials'>
                                     <h2>Социальные сети</h2>
                                     <div className="socIcons">
-                                        <a href='https://web.whatsapp.com/' target='blank'><PiWhatsappLogoThin size={35} /></a>
-                                        <a href='https://www.instagram.com/' target='blank'><IoLogoInstagram size={35} /></a>
+                                        <a href='https://wa.me/+79639951366' target='blank'><PiWhatsappLogoThin size={35} /></a>
+                                        <a href='https://www.instagram.com/invest__corp/' target='blank'><IoLogoInstagram size={35} /></a>
                                         <a href='https://web.telegram.org/' target='blank'><PiTelegramLogoThin size={35} /></a>
                                     </div>
 
