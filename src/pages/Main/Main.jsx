@@ -119,7 +119,7 @@ const Main = (props) => {
                             <div className='serviceType'><span>6</span><motion.p custom={6} variants={textAnimation3}>Подбор проектов с учетом пожеланий и потребностей</motion.p></div> */}
                         </div>
                         {/* <img src={gif03} alt="" /> */}
-                        <video width="400" autoPlay={true} muted playsInline loop>
+                        <video width="400" autoPlay={true} muted playsInline loop style={{ pointerEvents: "none" }}>
                             <source src='/assets/videos/investVideo.mp4' type="video/mp4" />
                             {/* <source src="mov_bbb.ogg" type="video/ogg" /> */}
                         </video>
