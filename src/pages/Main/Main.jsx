@@ -138,21 +138,21 @@ const Main = (props) => {
                                     <p>Площадь от 30 м.<sup>2</sup></p>
                                 </div>
 
-                                <img src={mc1} alt="" />
+                                <a href='https://wa.me/+79091684670'><img src={mc1} alt="" /></a>
                             </div>
                             <div>
                                 <div className="slideText">
                                     <h4>Продажа офисов класса A, A+ и B+</h4>
                                     <p>Площадь от 30 м.<sup>2</sup></p>
                                 </div>
-                                <img src={mc2} alt="" />
+                                <a href='https://wa.me/+79091684670'><img src={mc2} alt="" /></a>
                             </div>
                             <div>
                                 <div className="slideText">
                                     <h4>Ритейл</h4>
                                     <p>Площадь от 10 до 10'000 м.  <sup>2</sup></p>
                                 </div>
-                                <img src={mc3} alt="" />
+                                <a href='https://wa.me/+79091684670'><img src={mc3} alt="" /></a>
                             </div>
                         </Slider>
                         <div className="searchText">
@@ -194,7 +194,7 @@ const Main = (props) => {
                                 <div className='socials'>
                                     <h2>Социальные сети</h2>
                                     <div className="socIcons">
-                                        <a href='https://wa.me/+79639951366' target='blank'><PiWhatsappLogoThin size={35} /></a>
+                                        <a href='https://wa.me/+79091684670' target='blank'><PiWhatsappLogoThin size={35} /></a>
                                         <a href='https://www.instagram.com/invest__corp/' target='blank'><IoLogoInstagram size={35} /></a>
                                         <a href='https://web.telegram.org/' target='blank'><PiTelegramLogoThin size={35} /></a>
                                     </div>
