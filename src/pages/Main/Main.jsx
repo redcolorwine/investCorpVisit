@@ -187,7 +187,7 @@ const Main = (props) => {
                                 <div className="phone">
 
                                     <CiPhone size={65} />
-                                    <p>Телефон: <span>+7 (963) 995-13-66</span></p>
+                                    <p>Телефон: <span>+7 (903) 168-46-70</span></p>
                                 </div>
                             </div>
                             <div className="bottom">
