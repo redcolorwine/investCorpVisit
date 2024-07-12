@@ -118,38 +118,43 @@ const Main = (props) => {
                             {/* <div className='serviceType'><span>5</span><motion.p custom={5} variants={textAnimation3}>Юридическая проверка</motion.p></div>
                             <div className='serviceType'><span>6</span><motion.p custom={6} variants={textAnimation3}>Подбор проектов с учетом пожеланий и потребностей</motion.p></div> */}
                         </div>
-                        <img src={gif03} alt="" />
+                        {/* <img src={gif03} alt="" /> */}
+                        <video width="400" autoPlay={true} muted playsInline loop>
+                            <source src='/assets/videos/investVideo.mp4' type="video/mp4" />
+                            {/* <source src="mov_bbb.ogg" type="video/ogg" /> */}
+                        </video>
+
                     </div>
                 </motion.div>
 
                 <div className="searchingBest" ref={props.searchRef}>
                     <h1>ПОДБОР ЛУЧШЕЙ НЕДВИЖИМОСТИ</h1>
-                   
-                    <div className="searchingWrapper">
-                    <Slider {...settings}>
-                        <div>
-                            <div className="slideText">
-                                <h4>Аренда офисов класса A, А+ и B+</h4>
-                                <p>Площадь от 30 м.<sup>2</sup></p>
-                            </div>
 
-                            <img src={mc1} alt="" />
-                        </div>
-                        <div>
-                            <div className="slideText">
-                                <h4>Продажа офисов класса A, A+ и B+</h4>
-                                <p>Площадь от 30 м.<sup>2</sup></p>
+                    <div className="searchingWrapper">
+                        <Slider {...settings}>
+                            <div>
+                                <div className="slideText">
+                                    <h4>Аренда офисов класса A, А+ и B+</h4>
+                                    <p>Площадь от 30 м.<sup>2</sup></p>
+                                </div>
+
+                                <img src={mc1} alt="" />
                             </div>
-                            <img src={mc2} alt="" />
-                        </div>
-                        <div>
-                            <div className="slideText">
-                                <h4>Ритейл</h4>
-                                <p>Площадь от 10 до 10'000 м.  <sup>2</sup></p>
+                            <div>
+                                <div className="slideText">
+                                    <h4>Продажа офисов класса A, A+ и B+</h4>
+                                    <p>Площадь от 30 м.<sup>2</sup></p>
+                                </div>
+                                <img src={mc2} alt="" />
                             </div>
-                            <img src={mc3} alt="" />
-                        </div>
-                    </Slider>
+                            <div>
+                                <div className="slideText">
+                                    <h4>Ритейл</h4>
+                                    <p>Площадь от 10 до 10'000 м.  <sup>2</sup></p>
+                                </div>
+                                <img src={mc3} alt="" />
+                            </div>
+                        </Slider>
                         <div className="searchText">
                             <p>Получить персонализированную подборку по вашим параметрам</p>
                             <button onClick={() => goForm()}>ОСТАВИТЬ ЗАЯВКУ</button>

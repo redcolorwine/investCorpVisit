@@ -28,8 +28,7 @@
 html, body, #root, .App {
   height: 100%;
   width: 100%;
-  background-color: black;
-  /* background-color: rgb(24, 24, 24); */
+  background-color: rgb(24, 24, 24);
 }
 
 body, html {
@@ -155,8 +154,8 @@ body, html {
 .aboutBlock {
   height: auto;
   width: 100%;
-  background-color: black;
-  /* background-color: rgb(24, 24, 24); */
+  /* background-color: black; */
+  background-color: rgb(24, 24, 24);
   color: white;
   margin-top: 100px;
 }
@@ -208,8 +207,8 @@ body, html {
   /* margin: 80px auto 0px auto; */
   height: auto;
   width: 100%;
-  background-color: black;
-  /* background-color: rgb(24, 24, 24); */
+  /* background-color: black; */
+  background-color: rgb(24, 24, 24);
   color: white;
 
 }
@@ -261,6 +260,11 @@ body, html {
   height: 500px;
   width: 500px;
   object-fit: contain;
+}
+
+.servicesWrapper video {
+  height: 500px;
+  width: 500px;
 }
 
 .servicesText {
@@ -481,8 +485,8 @@ p.accActive {
   .aboutBlock {
     height: auto;
     width: 100%;
-    background-color: black;
-    /* background-color: rgb(24, 24, 24); */
+    /* background-color: black; */
+    background-color: rgb(24, 24, 24);
     color: white;
 
   }
@@ -567,6 +571,11 @@ p.accActive {
   }
 
   .servicesWrapper img {
+    height: 400px;
+    width: 400px;
+  }
+
+  .servicesWrapper video {
     height: 400px;
     width: 400px;
   }
@@ -773,6 +782,12 @@ p.accActive {
   }
 
   .servicesWrapper img {
+    order: 0;
+    height: 400px;
+    width: 100%;
+  }
+
+  .servicesWrapper video {
     order: 0;
     height: 400px;
     width: 100%;
@@ -1052,6 +1067,12 @@ p.accActive {
   }
 
   .servicesWrapper img {
+    order: 0;
+    height: 400px;
+    width: 100%;
+  }
+
+  .servicesWrapper video {
     order: 0;
     height: 400px;
     width: 100%;
